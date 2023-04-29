@@ -2,11 +2,8 @@
 @PushOnce('scripts')
 <style>
     .text {
-        position: absolute;
-        color: #fff;
+        
         font-size: 1em;
-        user-select: none;
-        pointer-events: none;
         animation: animate 7.5s linear infinite;
     }
 
@@ -29,8 +26,8 @@
     }
 </style>
 @endPushOnce('styles')
-<section class="relative overflow-hidden flex justify-center h-screen bg-black">
-    <h6 class="absolute text"> Circle-Text-Effects-</h6>
+<section class="relative overflow-hidden flex justify-center h-screen bg-white">
+    <h6 class="absolute text-black select-none pointer-events-none text"> --Ako--Precious--</h6>
 </section>
 
 
