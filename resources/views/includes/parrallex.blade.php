@@ -1,0 +1,12 @@
+<img src="{{ asset('images/1.png') }}" data-speed="-5" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/2.png') }}" data-speed="5" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/3.png') }}" data-speed="2" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/4.png') }}" data-speed="6" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/5.png') }}" data-speed="8" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/6.png') }}" data-speed="-2" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/7.png') }}" data-speed="4" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/8.png') }}" data-speed="-9" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/9.png') }}" data-speed="6" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/10.png') }}" data-speed="-7" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/11.png') }}" data-speed="-5" class="absolute w-full h-full top-0 left-0 object-cover layer">
+<img src="{{ asset('images/12.png') }}" data-speed="5" class="absolute w-full h-full top-0 left-0 object-cover layer">
