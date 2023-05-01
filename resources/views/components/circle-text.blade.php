@@ -25,7 +25,7 @@
         }
         </style>
     @endpushOnce('styles')
-    <section class="relative workssection  overflow-hidden py-12 min-h-screen bg-darkblue">
+    <section class="relative workssection  overflow-hidden py-7 lg:py-14 min-h-screen bg-darkblue">
         <h6 class="absolute text-white select-none pointer-events-none circular text-xs"> -Selected-Works</h6>
         <div class="container m-auto lg:py-6 bg-transparent flex flex-col lg:flex-row justify-center items-center">
             <div class=" w-full lg:w-6/12 relative">
@@ -54,8 +54,8 @@
                     <div
                         class="content relative p-8 z-10 transition-transform -translate-x-80 delay-0
                                group-hover:translate-x-0 group-hover:delay-75">
-                        <h3 class="uppercase text-lg font-bold leading-loose ">Post One</h3>
-                        <p class=" text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+                        <h3 class="uppercase text-lg font-bold leading-loose text-red">Post One</h3>
+                        <p class=" text-sm font-light text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
                             nisi
                             eligendi perferendis
                             voluptatem dicta facilis tenetur magnam atque id doloribus alias optio odio quis earum modi
@@ -77,8 +77,8 @@
                     <div
                         class="content relative p-8 z-10 transition-transform -translate-x-80 delay-0
                                group-hover:translate-x-0 group-hover:delay-75">
-                        <h3 class="uppercase text-lg font-bold leading-loose ">Post One</h3>
-                        <p class=" text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+                        <h3 class="uppercase text-lg font-bold leading-loose text-red">Post One</h3>
+                        <p class=" text-sm font-light text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
                             nisi
                             eligendi perferendis
                             voluptatem dicta facilis tenetur magnam atque id doloribus alias optio odio quis earum modi
@@ -100,8 +100,8 @@
                     <div
                         class="content relative p-8 z-10 transition-transform -translate-x-80 delay-0
                               group-hover:translate-x-0 group-hover:delay-75">
-                        <h3 class="uppercase text-lg font-bold leading-loose ">Post One</h3>
-                        <p class=" text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+                        <h3 class="uppercase text-lg font-bold leading-loose text-red">Post One</h3>
+                        <p class=" text-sm font-light text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
                             nisi
                             eligendi perferendis
                             voluptatem dicta facilis tenetur magnam atque id doloribus alias optio odio quis earum modi
@@ -123,8 +123,8 @@
                     <div
                         class="content relative p-8 z-10 transition-transform -translate-x-80 delay-0
                                 group-hover:translate-x-0 group-hover:delay-75">
-                        <h3 class="uppercase text-lg font-bold leading-loose ">Post One</h3>
-                        <p class=" text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+                        <h3 class="uppercase text-lg font-bold leading-loose text-red">Post One</h3>
+                        <p class=" text-sm font-light text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
                             nisi
                             eligendi perferendis
                             voluptatem dicta facilis tenetur magnam atque id doloribus alias optio odio quis earum modi
@@ -146,8 +146,8 @@
                     <div
                         class="content relative p-8 z-10 transition-transform -translate-x-80 delay-0
                          group-hover:translate-x-0 group-hover:delay-75">
-                        <h3 class="uppercase text-lg font-bold leading-loose ">Post One</h3>
-                        <p class=" text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+                        <h3 class="uppercase text-lg font-bold leading-loose text-red">Post One</h3>
+                        <p class=" text-sm font-light text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
                             nisi
                             eligendi perferendis
                             voluptatem dicta facilis tenetur magnam atque id doloribus alias optio odio quis earum modi
@@ -169,8 +169,8 @@
                     <div
                         class="content relative p-8 z-10 transition-transform -translate-x-80 delay-0
                               group-hover:translate-x-0 group-hover:delay-75">
-                        <h3 class="uppercase text-lg font-bold leading-loose ">Post One</h3>
-                        <p class=" text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+                        <h3 class="uppercase text-lg font-bold leading-loose text-red">Post One</h3>
+                        <p class=" text-sm font-light text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
                             nisi
                             eligendi perferendis
                             voluptatem dicta facilis tenetur magnam atque id doloribus alias optio odio quis earum modi
@@ -200,31 +200,31 @@
 
             })
             gsap.registerPlugin(ScrollTrigger);
-            gsap.from('.worksheader', {
-                scrollTrigger: {
-                    trigger: '.workssection',
-                    start: 'top 70%',
-                     markers: true,
-                    scrub:1,
-                    end: ' bottom top',
-                    toggleActions: 'restart complete reverse reset ',
-                },
-                duration: 1,
-                x: -1100,
-                ease: "slow"
-            });
-            gsap.from('.works', {
-                scrollTrigger: {
-                    trigger: '.workssection',
-                    start: 'top 40%',
-                     markers: true,
-                    scrub:1,
-                    end: ' bottom top',
-                    toggleActions: 'restart complete reverse reset ',
-                },
-                duration: 1,
-                y: 1100,
-                ease: "slow"
-            });
+            // gsap.from('.worksheader', {
+            //     scrollTrigger: {
+            //         trigger: '.workssection',
+            //         start: 'top 70%',
+            //          markers: true,
+            //         scrub:1,
+            //         end: ' bottom top',
+            //         toggleActions: 'restart complete reverse reset ',
+            //     },
+            //     duration: 1,
+            //     x: -1100,
+            //     ease: "slow"
+            // });
+            // gsap.from('.works', {
+            //     scrollTrigger: {
+            //         trigger: '.workssection',
+            //         start: 'top 40%',
+            //          markers: true,
+            //         scrub:1,
+            //         end: ' bottom top',
+            //         toggleActions: 'restart complete reverse reset ',
+            //     },
+            //     duration: 1,
+            //     y: 1100,
+            //     ease: "slow"
+            // });
         </script>
     @endpushOnce

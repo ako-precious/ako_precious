@@ -80,14 +80,15 @@
                                 Subject</label>
                         </div>
                         <div class="relative z-0 w-full mb-6 group">
-                            <textarea name="" id="" cols="30" rows="3" placeholder=" " required
+                            <textarea name="" id="" cols="30" rows="2" placeholder=" " required
                                 class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white appearance-none focus:outline-none focus:ring-0 focus:border-red peer"></textarea>
 
                             <label for="floating_last_name"
                                 class="peer-focus:font-medium absolute text-sm text-white duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-red peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
                                 name</label>
                         </div>
-                        <button class="group bg-white overflow-hidden relative w-[130px] h-12 flex justify-center items-center ease-in-out transition-all
+                        <button
+                            class="group bg-white overflow-hidden relative w-[130px] h-12 flex justify-center items-center ease-in-out transition-all
                         before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:delay-500 before:duration-700 before:bg-red
                         after:absolute after:top-0 after:right-0 after:w-1 after:h-full after:delay-500 after:duration-700 after:bg-red
                         hover:after:w-6/12 hover:before:w-6/12 hover:after:delay-500 hover:before:delay-500"
@@ -97,9 +98,9 @@
                                 Send
                             </span>
                             <span
-                            class="absolute text-white text-lg transition-all duration-500 delay-0 scale-300 opacity-0
+                                class="absolute text-white text-lg transition-all duration-500 delay-0 scale-300 opacity-0
                                   group-hover:scale-1 group-hover:z-10 group-hover:opacity-1 group-hover:delay-500">
-                            Send </span>
+                                Send </span>
                         </button>
                     </form>
                 </div>
@@ -108,11 +109,14 @@
         </div>
 </section>
 
-<script>
-    const cursor = document.querySelector('.cursor');
-    document.addEventListener("mousemove", function(e) {
-        cursor.style.left = e.pageX + 'px';
-        cursor.style.top = e.pageY + 'px';
 
-    })
-</script>
+@pushOnce('scripts')
+    <script>
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener("mousemove", function(e) {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px';
+
+        })
+    </script>
+@endpushOnce

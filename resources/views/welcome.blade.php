@@ -28,20 +28,13 @@
 <body class="antialiased relative bg-white h-screen overflow-y-auto" id="my-scrollbar">
 {{-- <body class="antialiased relative bg-white min-h-screen overflow-y-auto" "> --}}
     
-    {{-- @component("components.header")
-        
-    @endcomponent
-
-    @component("components.circle-text")
-    @endcomponent --}}
-        
-   
         
     <div class="circle-text">
         <!-- HTML markup for the first component goes here -->
-        <x-header />
+        {{-- <x-header /> --}}
         {{-- <x-circle-text /> --}}
-        <x-conatact />
+        <x-3d-image-hover />
+        {{-- <x-conatact /> --}}
     </div>
         {{--  <x-image-overlay />
     <x-silhouette />
