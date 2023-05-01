@@ -1,13 +1,40 @@
-{{-- @pushOnce('styles') --}}
+{{-- @Push('styles') --}}
+<link rel="stylesheet" href="{{ asset('css/header.css') }}">
 <style>
     .waterlike {
         border-radius: 52% 48% 77% 23% / 45% 59% 41% 55%;
-        background-color: #93032E;
     }
 
     .outer:hover .waterlike {
-        border-radius: 32% 68% 67% 33% / 56% 60% 40% 44%;
-        background-color: #1B1B3A;
+        animation: watery 6s ease-in-out infinite;
+
+    }
+
+    @keyframes watery {
+        0% {
+            background: #1B1B3A;
+            border-radius: 32% 68% 67% 33% / 56% 60% 40% 44%;
+        }
+
+        25% {
+            background: #FF521B;
+            border-radius: 33% 70% 54% 46% / 40% 34% 66% 60%;
+        }
+
+        50% {
+            background: #93032E;
+            border-radius: 36% 64% 29% 71% / 63% 32% 68% 37%;
+        }
+
+        75% {
+            background: #034C3C;
+            border-radius: 48% 52% 55% 45% / 32% 49% 51% 68%;
+        }
+
+        100% {
+            background: #1B1B3A;
+            border-radius: 32% 68% 67% 33% / 56% 60% 40% 44%;
+        }
     }
 
     .outer {
@@ -27,9 +54,10 @@
     }
 
     section .text span.active {
-        animation: smoke 2.5s linear forwards;
+        animation: smoke 3s linear forwards;
         transform-origin: bottom;
     }
+
 
     @keyframes smoke {
 
@@ -83,7 +111,7 @@
         bottom: 0;
         transform-origin: 100% 50%;
         transform: scaleX(0);
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1);
     }
 
     .swap::after {
@@ -92,7 +120,7 @@
         top: 0;
         transform-origin: 100% 50%;
         transform: translate3d(200%, 0, 0);
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1);
         color: #93032E;
     }
 
@@ -107,7 +135,7 @@
 
     .swap span {
         display: inline-block;
-        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+        transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1);
     }
 
     .swap:hover span {
@@ -115,52 +143,13 @@
     }
 
 
-    a::before {
-        content: "";
-        background: #93032E;        
-    } 
-     a::after {
-        content: "";
-        background: #93032E;
-        
-    }
-    a span {
-            position: absolute;
-            z-index: 1;
-            color: #fff;
-            font-size: 18px;
-            transition: 0.5s;
-        }
-
-        a span:nth-child(1) {
-            transition-delay: 0.75s;
-        }
-
-        a:hover span:nth-child(1) {
-            transform: scale(0);
-            transition-delay: 0s;
-        }
-
-        a span:nth-child(2) {
-            transition-delay: 0s;
-            transform: scale(3);
-            opacity: 0;
-        }
-
-        a:hover span:nth-child(2) {
-            transform: scale(1);
-            transition-delay: 0s;
-            z-index: 10;
-            color: #fff;
-            opacity: 1;
-            transition-delay: 0.5s;
-        }
-   
     /* End of swap animation */
 </style>
-{{-- @endpushOnce('styles') --}}
-<header style="background: #1B1B3A;"
-    class="header fixed top-0 left-0 w-full flex justify-start items-center z-50 h-screen transition-all ">
+{
+{{-- @endPush --}}
+
+<header
+    class="header bg-darkblue fixed top-0 left-0 w-full flex justify-start items-center z-50 h-screen transition-all ">
     <div class="ml-6 h-12 w-12">
         <div onclick="menuOpener()"
             class="marks open group right-0 opacity-0 relative  h-12 flex flex-col items-center justify-center w-12   transition-all delay-75 duration-500">
@@ -194,116 +183,124 @@
             </li>
         </ul>
     </nav> --}}
-{{-- @PushOnce('scripts') --}}
-<section
-    class="min-h-screen banner py-20 overflow-hidden relative w-full flex flex-col lg:flex-row justify-center items-center">
+<section class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto">
     @include('includes.parrallex')
-    <div class=" w-11/12 lg:w-6/12 relative written-text">
-        <div class="flex w-64 md:w-96 m-auto flex-col justify-center">
-            <h1 data-replace="Full-Stack developer." role="heading" style="color:#1B1B3A;"
-                class="swap leading-10 pb-4 lg:text-7xl md:text-5xl text-3xl font-bold capitalize transition-all delay-75 ">
-                <span>Full-Stack <br> developer.
-                </span>
-            </h1>
-            <p style="color:#1B1B3A;" class="text pb-4  text-base">I, as a full stack developer, can provide the
-                technical
-                expertise and creative solutions necessary to
-                build a website that stands out by reflexing how you want the world to see you.</p>
-            <a style="background: #1B1B3A; "
-                class="text-white overflow-hidden relative w-40 h-14 flex justify-center items-center ease-in-out transition-all
-                before:absolute before:top-0 before:left-0 before:w-1 before:h-full   before:delay-500 before:duration-700 
-                after:absolute after:top-0 after:right-0 after:w-1 after:h-full  after:delay-500 after:duration-700 
-                hover:after:w-6/12 hover:before:w-6/12 hover:after:delay-500 hover:before:delay-500"
-                href="">
-                <span>Contact Me</span>                           
-                <span>Contact Me</span>                           
-                
-            </a>
-        </div>
-    </div>
-    <div class="w-11/12 lg:w-6/12 pt-3 m-auto relative my-image">
-        <div class="outer grid place-items-center layer "data-speed="0">
-            <div
-                class="waterlike z-20 bg-white w-64 md:w-80 h-64 md:h-80 overflow-hidden transition-all delay-75 duration-500">
-                <img src="{{ asset('images/akoprecious.jpg') }}" class=" w-full h-full object-cover " alt="">
+    <div class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center">
+        <div class=" w-full lg:w-6/12 relative written-text">
+            <div class="flex w-64 md:w-96 m-auto flex-col justify-center">
+                <h1 data-replace="Full-Stack developer." role="heading"
+                    class="swap leading-10 pb-4 lg:text-7xl md:text-5xl text-darkblue text-3xl font-bold capitalize transition-all delay-75 ">
+                    <span>Full-Stack <br> developer.
+                    </span>
+                </h1>
+                <p class="text pb-4 text-darkblue text-base">I, as a full stack developer, can provide the
+                    technical
+                    expertise and creative solutions necessary to
+                    build a website that stands out by reflexing how you want the world to see you.</p>
+                <a 
+                class="group text-white link bg-darkblue overflow-hidden relative w-40 h-14 flex justify-center items-center ease-in-out transition-all
+                        before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:delay-500 before:duration-700 before:bg-red
+                        after:absolute after:top-0 after:right-0 after:w-1 after:h-full after:delay-500 after:duration-700 after:bg-red
+                        hover:after:w-6/12 hover:before:w-6/12 hover:after:delay-500 hover:before:delay-500"
+                    href="#contact">
+                    <span
+                        class="absolute text-white text-lg transition-all duration-500 delay-700 group-hover:scale-0 group-hover:delay-0">Contact
+                        Me</span>
+                    <span
+                        class="absolute text-white text-lg transition-all duration-500 delay-0 scale-300 opacity-0
+                    group-hover:scale-1 group-hover:z-10 group-hover:opacity-1 group-hover:delay-500">Contact
+                        Me</span>
+                </a>
+            
             </div>
-            <div
-                class="waterlike z-10 below bg-white w-64 md:w-80 h-64 md:h-80 overflow-hidden transition-all delay-100 duration-700 mt-8 mr-8 ">
+        </div>
+        <div class="w-full lg:w-6/12 pt-3 m-auto relative my-image">
+            <div class="outer w-64 md:w-80 h-64 md:h-80 m-auto grid place-items-center layer "data-speed="0">
+                <div class="waterlike z-20 bg-red w-full h-full overflow-hidden transition-all delay-75 duration-500">
+                    <img src="{{ asset('images/akoprecious.jpg') }}" class=" w-full h-full object-cover "
+                        alt="">
+                </div>
+                <div
+                    class="waterlike z-10 below bg-red w-full h-full overflow-hidden transition-all delay-100 duration-700 mt-8 mr-8 ">
 
+                </div>
             </div>
         </div>
     </div>
 </section>
-<script>
-    // Creating a smoke animation
-    const text = document.querySelector('.text');
-    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+@pushOnce('scripts')
+    <script>
+        // Creating a smoke animation
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\S/g, `<span class="smoke">$&</span>`);
 
-    // now, add active class on hovered <span> tag const letters = document.querySelectorAll('span');
-    const letters = document.querySelectorAll('span');
-    for (let i = 0; i < letters.length; i++) {
-        letters[i].addEventListener("mouseover", function() {
-            letters[i].classList.toggle('active')
-        })
-    }
+        // now, add active class on hovered <span> tag const letters = document.querySelectorAll('span');
+        const letters = document.querySelectorAll('.smoke');
+        for (let i = 0; i < letters.length; i++) {
+            letters[i].addEventListener("mouseover", function() {
+                letters[i].classList.toggle('active')
+            })
+        }
 
-    function menuOpener() {
-        document.querySelector(".open").classList.toggle('right-28');
-        document.querySelector(".open").classList.toggle('right-0');
-        document.querySelector(".close").classList.toggle('left-0');
-        document.querySelector(".close").classList.toggle('-left-28');
-    }
+        function menuOpener() {
+            document.querySelector(".open").classList.toggle('right-28');
+            document.querySelector(".open").classList.toggle('right-0');
+            document.querySelector(".close").classList.toggle('left-0');
+            document.querySelector(".close").classList.toggle('-left-28');
+        }
 
-    function menuCloser() {
-        document.querySelector(".open").classList.toggle('right-28');
-        document.querySelector(".open").classList.toggle('right-0');
-        document.querySelector(".close").classList.toggle('left-0');
-        document.querySelector(".close").classList.toggle('-left-28');
-    }
+        function menuCloser() {
+            document.querySelector(".open").classList.toggle('right-28');
+            document.querySelector(".open").classList.toggle('right-0');
+            document.querySelector(".close").classList.toggle('left-0');
+            document.querySelector(".close").classList.toggle('-left-28');
+        }
 
-    gsap
-        .timeline()
-        .from(".typing", {
-            duration: 3,
-            text: ""
-        })
-        .to(".header", {
-            duration: 1,
-            height: '60px'
-        })
-        .to(".hide", {
-            duration: 1,
-            fontSize: '14px'
-        })
-        .to(".marks", {
-            duration: 1,
-            opacity: 1
-        })
-        .from(".banner", {
-            duration: 2,
-            opacity: 0
-        })
-        .from(".written-text", {
-            duration: 1,
-            opacity: 0,
-            left: -100
-        })
-        .from(".my-image", {
-            duration: 1,
-            opacity: 0,
-            right: -100
-        })
-    // parallax animation
-    document.addEventListener("mousemove", parallax);
+        gsap
+            .timeline()
+            .from(".typing", {
+                duration: 3,
+                text: ""
+            })
+            .to(".header", {
+                duration: 1,
+                height: '60px'
+            })
+            .to(".hide", {
+                duration: 1,
+                fontSize: '14px'
+            })
+            .to(".marks", {
+                duration: 1,
+                opacity: 1,
+                ease: "bounce"
+            })
+            .from(".banner", {
+                duration: 1.5,
+                opacity: 0,
+                top: -100,
+                ease: "slow"
+            })
+            .from(".written-text", {
+                duration: 1,
+                opacity: 0,
+                left: -100
+            })
+            .from(".my-image", {
+                duration: 1,
+                opacity: 0,
+                right: -100
+            })
+        // parallax animation
+        document.addEventListener("mousemove", parallax);
 
-    function parallax(e) {
-        this.querySelectorAll('.layer').forEach(layer => {
-            const speed = layer.getAttribute('data-speed')
-            const x = (window.innerWidth - e.pageX * speed) / 100
-            const y = (window.innerHeight - e.pageY * speed) / 100
-            layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-        })
-    }
-</script>
-
-{{-- @endPushOnce --}}
+        function parallax(e) {
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+                const x = (window.innerWidth - e.pageX * speed) / 100
+                const y = (window.innerHeight - e.pageY * speed) / 100
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+    </script>
+@endpushOnce

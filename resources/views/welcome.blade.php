@@ -9,21 +9,41 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     @vite(['resources/css/app.css', 'resources/js/scrollbar.js', 'resources/js/app.js'])
     @stack('styles')
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
 </head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
 
-<body class="antialiased bg-white h-screen overflow-y-auto" id="my-scrollbar">
+<body class="antialiased relative bg-white h-screen overflow-y-auto" id="my-scrollbar">
+{{-- <body class="antialiased relative bg-white min-h-screen overflow-y-auto" "> --}}
     
+    {{-- @component("components.header")
+        
+    @endcomponent
+
+    @component("components.circle-text")
+    @endcomponent --}}
+        
+   
+        
+    <div class="circle-text">
+        <!-- HTML markup for the first component goes here -->
         <x-header />
-        <x-rotating-squares />
+        {{-- <x-circle-text /> --}}
+        <x-conatact />
+    </div>
         {{--  <x-image-overlay />
-            <x-circle-text />
     <x-silhouette />
     <div
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
@@ -183,8 +203,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
-    
+    </div> --}}    
     
     @stack('scripts')
      
