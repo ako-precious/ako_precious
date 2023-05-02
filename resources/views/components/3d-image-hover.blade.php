@@ -3,12 +3,12 @@
         transform: rotateY(180deg);
     }
 </style>
-<section class="relative overflow-hidden py-7 lg:py-14 min-h-screen bg-darkblue">
+<section class="relative overflow-hidden py-7 lg:py-14 min-h-screen">
     <div class="container m-auto lg:py-3 bg-transparent flex flex-col lg:flex-row justify-center items-center">
         <div class=" w-full lg:w-6/12 relative">
             <div class="flex pl-5 m-auto flex-col justify-center">
                 <h1 data-replace="Skills." role="heading"
-                    class="worksheader swap leading-10 pb-4 lg:text-7xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75 ">
+                    class="worksheader swap leading-10 pb-4 lg:text-7xl md:text-5xl text-darkblue text-3xl font-bold capitalize transition-all delay-75 ">
                     <span>Skills.
                     </span>
                 </h1>
@@ -22,7 +22,7 @@
         <div style="transform-style: preserve-3d; perspective:1000px;"
             class="card group relative w-72 h-80 m-auto sm:m-6 ">
             <div style="transform-style: preserve-3d;  "
-                class="box absolute top-0 left-0 w-full h-full bg-white shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
+                class="box absolute top-0 left-0 w-full h-full bg-red shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
                 <div class="imgBx absolute flex flex-col  top-0 left-0 w-full h-full">
                     <div class="flex w-full h-1/2 ">
                         <img class=" w-[100px] h-[100px] m-auto " src="{{ asset('images/php.png') }}" alt="" />
@@ -50,7 +50,7 @@
         <div style="transform-style: preserve-3d; perspective:1000px;"
             class="card group relative w-72 h-80 m-auto sm:m-6 ">
             <div style="transform-style: preserve-3d;  "
-                class="box absolute top-0 left-0 w-full h-full bg-white shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
+                class="box absolute top-0 left-0 w-full h-full bg-red shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
                 <div class="imgBx absolute flex flex-col  top-0 left-0 w-full h-full">
                     <div class="flex w-full h-1/2 ">
                         <img class="w-[100px] h-[100px] m-auto" src="{{ asset('images/Vue.png') }}" alt="" />
@@ -79,7 +79,7 @@
         <div style="transform-style: preserve-3d; perspective:1000px;"
             class="card group relative w-72 h-80 m-auto sm:m-6 ">
             <div style="transform-style: preserve-3d;  "
-                class="box absolute top-0 left-0 w-full h-full bg-white shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
+                class="box absolute top-0 left-0 w-full h-full bg-red shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
                 <div class="imgBx absolute flex flex-col  top-0 left-0 w-full h-full">
                     <div class="flex w-full h-1/2 ">
                         <img class="w-[100px] h-[100px] m-auto" src="{{ asset('images/laravel.png') }}"
@@ -108,7 +108,7 @@
         <div style="transform-style: preserve-3d; perspective:1000px;"
             class="card group relative w-72 h-80 m-auto sm:m-6 ">
             <div style="transform-style: preserve-3d;  "
-                class="box absolute top-0 left-0 w-full h-full bg-white shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
+                class="box absolute top-0 left-0 w-full h-full bg-red shadow-2xl rounded-2xl transition-all duration-1000 ease-in">
                 <div class="imgBx absolute flex flex-col  top-0 left-0 w-full h-full">
                     <div class="flex w-full h-1/2 ">
                         <img class="w-[100px] h-[100px] m-auto" src="{{ asset('images/git.png') }}" alt="" />

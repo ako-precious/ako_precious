@@ -1,43 +1,46 @@
-<style>
-    /* .icon div:hover~.cursor {
-        width: 60px;
-        height: 60px;
-        border: 2px solid blueviolet;
-    } */
-</style>
-<section class="relative workssection  overflow-hidden py-12 min-h-screen " id="contact">
 
-    <div class="container m-auto lg:py-6 bg-transparent flex justify-center items-center">
+<section class="relative overflow-hidden py-12 min-h-screen " id="contact">
+
+    <div class="container  m-auto lg:py-6 bg-transparent flex justify-center items-center">
         <div
             class="m-auto w-7/12 flex bg-darkblue lg:py-6 flex-col-reverse lg:flex-row justify-center items-center shadow-xl rounded-xl">
             <div
-                class="relative flex icon flex-row lg:flex-col items-center justify-center w-full lg:w-[120px]  lg:py-12  ml-0 lg:-ml-[140px] rounded-full bg-red shadow-3xl ">
-                <div class=" my-3 group peer">
+                class=" flex iconic flex-row lg:flex-col items-center justify-center w-full lg:w-[120px]  lg:py-12  ml-0 lg:-ml-[140px] rounded-full bg-red shadow-3xl ">
+                <div
+                    class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                      hover:outline-4 hover:outline-darkblue hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
                     <a href=""
-                        class="text-white text-center w-20 h-8 hover:text-darkblue transtion delay-75 duration-500 relative inline-block ">
-                        <i class="m-auto fa-solid fa-envelope "></i>
-                    </a>
-                </div>
-                <div class=" my-3 group peer">
-                    <a href=""
-                        class="text-white text-center w-20 h-8 hover:text-darkblue transtion delay-75 duration-500 relative inline-block ">
-                        <i class="fa-brands fa-github m-auto "></i>
-                    </a>
-                </div>
-                <div class=" my-3 group peer">
-                    <a href=""
-                        class="text-white text-center w-20 h-8 hover:text-darkblue transtion delay-75 duration-500 relative inline-block ">
-                        <i class="fa-brands m-auto fa-linkedin "></i>
-                    </a>
-                </div>
-                <div class=" my-3 group peer">
-                    <a href=""
-                        class="text-white text-center w-20 h-8 hover:text-darkblue transtion delay-75 duration-500 relative inline-block ">
-                        <i class="fa-brands m-auto fa-twitter "></i>
+                        class="text-white text-center w-full h-full flex justify-center items-center hover:text-darkblue transtion delay-75 duration-500 relative">
+                        <i class=" fa-solid fa-envelope "></i>
                     </a>
                 </div>
                 <div
-                    class="fixed w-0 h-0 border-4 rounded-full border-white -translate-y-2/4 -translate-x-2/4 pointer-events-none transition-all delay-75 duration-500 cursor
+                    class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                hover:outline-4 hover:outline-darkblue hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
+                    <a href=""
+                        class="text-white text-center w-full h-full flex justify-center items-center hover:text-darkblue transtion delay-75 duration-500 relative">
+                        <i class="fa-brands fa-github "></i>
+                    </a>
+                </div>
+                <div
+                    class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                hover:outline-4 hover:outline-darkblue hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
+                    <a href=""
+                        class="text-white text-center w-full h-full flex justify-center items-center hover:text-darkblue transtion delay-75 duration-500 relative">
+                        <i class="fa-brands m-auto fa-linkedin "></i>
+                    </a>
+                </div>
+                <div
+                    class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                hover:outline-4 hover:outline-darkblue hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
+                    <a href=""
+                        class="text-white text-center w-full h-full flex justify-center items-center hover:text-darkblue transtion delay-75 duration-500 relative">
+                        <i class="fa-brands m-auto fa-twitter "></i>
+                    </a>
+                </div>
+
+                <div
+                    class="fixed w-0 h-0 border-4 rounded-full border-red -translate-y-2/4 -translate-x-2/4 pointer-events-none transition-all delay-75 duration-500 cursor
                     peer-hover:w-[50px] peer-hover:h-[50px] peer-hover:border-2 peer-hover:border-darkblue">
                 </div>
             </div>
@@ -112,11 +115,11 @@
 
 @pushOnce('scripts')
     <script>
-        const cursor = document.querySelector('.cursor');
-        document.addEventListener("mousemove", function(e) {
-            cursor.style.left = e.pageX + 'px';
-            cursor.style.top = e.pageY + 'px';
+    //     const cursor = document.querySelector('.cursor');
+    //     document.addEventListener("mousemove", function(e) {
+    //         cursor.style.left = e.pageX + 'px';
+    //         cursor.style.top = e.pageY + 'px';
 
-        })
-    </script>
+    //     })
+    // </script>
 @endpushOnce

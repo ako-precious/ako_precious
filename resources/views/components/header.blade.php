@@ -92,6 +92,7 @@
 
     /* link text swap */
     .swap {
+        color: white;
         overflow: hidden;
         position: relative;
         display: inline-block;
@@ -172,17 +173,17 @@
     <h1 class="typing hide absolute top-2/4 left-2/4  -translate-x-2/4  -translate-y-2/4  tracking-widest font-black unpercase text-white z-10 "
         style="font-size:4vw;">AKO's PORTFOLIO </h1>
 </header>
-{{-- <nav class="fixed inset-0 w-screen flex justify-center items-center h-screen z-10" style="margin-top:60px">
-        <ul class="relative w-full  flex flex-col transition-all">
-            <li class="list-none text-"><a class="text-center text-white inline-block p-4 hover:text-pink-700" href="#">home</a></li>
-            <li class="list-none text-"><a class="text-center text-white inline-block p-4 hover:text-pink-700" href="#">home</a>
+<nav class="fixed -left-[-10000px] inset-0 w-screen bg-darkblue flex justify-center items-center h-screen z-40 transition-all delay-150 duration-700">
+        <ul class="relative w-full  flex justify-center items-center flex-col transition-all">
+            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a></li>
+            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a>
             </li>
-            <li class="list-none text-"><a class="text-center text-white inline-block p-4 hover:text-pink-700" href="#">home</a>
+            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a>
             </li>
-            <li class="list-none text-"><a class="text-center text-white inline-block p-4 hover:text-pink-700" href="#">home</a>
+            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a>
             </li>
         </ul>
-    </nav> --}}
+    </nav>
 <section class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto">
     @include('includes.parrallex')
     <div class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center">
@@ -193,7 +194,7 @@
                     <span>Full-Stack <br> developer.
                     </span>
                 </h1>
-                <p class="text pb-4 text-darkblue text-base">I, as a full stack developer, can provide the
+                <p class="text pb-4 text-white text-base">I, as a full stack developer, can provide the
                     technical
                     expertise and creative solutions necessary to
                     build a website that stands out by reflexing how you want the world to see you.</p>
@@ -228,6 +229,7 @@
         </div>
     </div>
 </section>
+
 @pushOnce('scripts')
     <script>
         // Creating a smoke animation
@@ -247,13 +249,17 @@
             document.querySelector(".open").classList.toggle('right-0');
             document.querySelector(".close").classList.toggle('left-0');
             document.querySelector(".close").classList.toggle('-left-28');
+            document.querySelector("nav").classList.toggle('left-0');
+            document.querySelector("nav").classList.toggle('-left-[-10000px]');
         }
-
+        
         function menuCloser() {
             document.querySelector(".open").classList.toggle('right-28');
             document.querySelector(".open").classList.toggle('right-0');
             document.querySelector(".close").classList.toggle('left-0');
             document.querySelector(".close").classList.toggle('-left-28');
+            document.querySelector("nav").classList.toggle('left-0');
+            document.querySelector("nav").classList.toggle('-left-[-10000px]');
         }
 
         gsap

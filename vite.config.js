@@ -12,6 +12,7 @@ export default defineConfig({
             'resources/css/app.css', 
             'resources/js/app.js',
             'resources/js/scrollbar.js',
+            'resources/js/jarallex-element.js',
         ]),
         {
             name: 'blade',
