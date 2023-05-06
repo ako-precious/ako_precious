@@ -25,14 +25,15 @@
     }
 </style>
 
-<body class="antialiased relative bg-black h-screen overflow-y-auto" id="my-scrollbar">
+<body class="antialiased relative bg-black h-screen overflow-x-hiden" id="my-scrollbar">
 
 {{-- <body class="antialiased relative bg-black min-h-screen overflow-y-auto" "> --}}
     
         
     <div class="circle-text">
         <!-- HTML markup for the first component goes here -->
-        {{-- <x-header /> --}}
+        <x-header />
+        <x-about />
         <x-circle-text />
         <x-3d-image-hover />
         <x-conatact />
@@ -41,7 +42,29 @@
        
     
     @stack('scripts')
-     
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBVcej_TP3ft1vK2xRsXv6DeY36o3K3CRM",
+          authDomain: "my-portfolio-40380.firebaseapp.com",
+          projectId: "my-portfolio-40380",
+          storageBucket: "my-portfolio-40380.appspot.com",
+          messagingSenderId: "734825077287",
+          appId: "1:734825077287:web:1289468355ee2bba21cc02",
+          measurementId: "G-8975X3JCGX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 
 </html>

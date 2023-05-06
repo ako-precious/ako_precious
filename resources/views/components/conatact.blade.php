@@ -3,7 +3,7 @@
 
     <div class="container  m-auto lg:py-6 bg-transparent flex justify-center items-center">
         <div
-            class="m-auto w-7/12 flex bg-darkblue lg:py-6 flex-col-reverse lg:flex-row justify-center items-center shadow-xl rounded-xl">
+            class="m-auto w-full md:w-7/12 flex bg-darkblue p-6 flex-col-reverse lg:flex-row justify-center items-center shadow-xl rounded-xl">
             <div
                 class=" flex iconic flex-row lg:flex-col items-center justify-center w-full lg:w-[120px]  lg:py-12  ml-0 lg:-ml-[140px] rounded-full bg-red shadow-3xl ">
                 <div
@@ -90,20 +90,21 @@
                                 class="peer-focus:font-medium absolute text-sm text-white duration-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-red peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
                                 name</label>
                         </div>
-                        <button
-                            class="group bg-white overflow-hidden relative w-[130px] h-12 flex justify-center items-center ease-in-out transition-all
-                        before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:delay-500 before:duration-700 before:bg-red
-                        after:absolute after:top-0 after:right-0 after:w-1 after:h-full after:delay-500 after:duration-700 after:bg-red
-                        hover:after:w-6/12 hover:before:w-6/12 hover:after:delay-500 hover:before:delay-500"
-                            type="submit">
-                            <span
-                                class="absolute text-darkblue text-lg transition-all duration-500 delay-700 group-hover:scale-0 group-hover:delay-0">
-                                Send
+                        <button type="submit">
+                            <a 
+                    class="group text-white link bg-white overflow-hidden relative w-[120px] h-12 flex justify-center items-center ease-in-out transition-all
+                            before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:delay-500 before:duration-700 before:bg-red
+                            after:absolute after:top-0 after:right-0 after:w-1 after:h-full after:delay-500 after:duration-700 after:bg-red
+                            hover:after:w-6/12 hover:before:w-6/12 hover:after:delay-500 hover:before:delay-500"
+                        href="#contact">
+                        <span
+                            class="absolute text-darkblue text-base transition-all duration-500 delay-700 group-hover:scale-0 group-hover:delay-0"> Send
                             </span>
-                            <span
-                                class="absolute text-white text-lg transition-all duration-500 delay-0 scale-300 opacity-0
-                                  group-hover:scale-1 group-hover:z-10 group-hover:opacity-1 group-hover:delay-500">
-                                Send </span>
+                        <span
+                            class="absolute text-white text-base transition-all duration-500 delay-0 scale-300 opacity-0
+                        group-hover:scale-1 group-hover:z-10 group-hover:opacity-1 group-hover:delay-500"> Send
+                            </span>
+                    </a>
                         </button>
                     </form>
                 </div>

@@ -173,21 +173,63 @@
     <h1 class="typing hide absolute top-2/4 left-2/4  -translate-x-2/4  -translate-y-2/4  tracking-widest font-black unpercase text-white z-10 "
         style="font-size:4vw;">AKO's PORTFOLIO </h1>
 </header>
-<nav class="fixed -left-[-10000px] inset-0 w-screen bg-darkblue flex justify-center items-center h-screen z-40 transition-all delay-150 duration-700">
-        <ul class="relative w-full  flex justify-center items-center flex-col transition-all">
-            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a></li>
-            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a>
-            </li>
-            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a>
-            </li>
-            <li class="list-none text-"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#">home</a>
-            </li>
-        </ul>
-    </nav>
+<div class="relative overflow-hidden">
+    <nav class="fixed left-[-10000px] inset-0 w-screen bg-darkblue flex justify-center items-center h-screen z-40 transition-all delay-150 duration-700">
+            <ul class="relative w-full  flex justify-center items-center flex-col transition-all">
+                <li class="list-none  text-"onclick="menuCloser()"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#works">Works</a>
+                </li>
+                <li class="list-none  text-"onclick="menuCloser()"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#resume">Resume</a>
+                </li>
+                <li class="list-none  text-"onclick="menuCloser()"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#contact">Contact</a>
+                </li>
+                <li class="list-none  text-"onclick="menuCloser()"> <div
+                    class=" flex iconic flex-row  items-center justify-center w-full lg:w-[320px]  lg:py-12  ml-0 rounded-full  ">
+                    <div
+                        class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                          hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
+                        <a href=""
+                            class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transtion delay-75 duration-500 relative">
+                            <i class=" fa-solid fa-envelope "></i>
+                        </a>
+                    </div>
+                    <div
+                        class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                    hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
+                        <a href=""
+                            class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transtion delay-75 duration-500 relative">
+                            <i class="fa-brands fa-github "></i>
+                        </a>
+                    </div>
+                    <div
+                        class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                    hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
+                        <a href=""
+                            class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transtion delay-75 duration-500 relative">
+                            <i class="fa-brands m-auto fa-linkedin "></i>
+                        </a>
+                    </div>
+                    <div
+                        class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
+                    hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transtion delay-75 duration-500  ">
+                        <a href=""
+                            class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transtion delay-75 duration-500 relative">
+                            <i class="fa-brands m-auto fa-twitter "></i>
+                        </a>
+                    </div>
+    
+                    <div
+                        class="fixed w-0 h-0 border-4 rounded-full border-red -translate-y-2/4 -translate-x-2/4 pointer-events-none transition-all delay-75 duration-500 cursor
+                        peer-hover:w-[50px] peer-hover:h-[50px] peer-hover:border-2 peer-hover:border-darkblue">
+                    </div>
+                </div></li>
+            </ul>
+        </nav>
+
+</div>
 <section class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto">
     @include('includes.parrallex')
     <div class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center">
-        <div class=" w-full lg:w-6/12 relative written-text">
+        <div class=" w-full lg:w-6/12 py-6 relative written-text">
             <div class="flex w-64 md:w-96 m-auto flex-col justify-center">
                 <h1 data-replace="Full-Stack developer." role="heading"
                     class="swap leading-10 pb-4 lg:text-7xl md:text-5xl text-darkblue text-3xl font-bold capitalize transition-all delay-75 ">
@@ -197,21 +239,8 @@
                 <p class="text pb-4 text-white text-base">I, as a full stack developer, can provide the
                     technical
                     expertise and creative solutions necessary to
-                    build a website that stands out by reflexing how you want the world to see you.</p>
-                <a 
-                class="group text-white link bg-darkblue overflow-hidden relative w-40 h-14 flex justify-center items-center ease-in-out transition-all
-                        before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:delay-500 before:duration-700 before:bg-red
-                        after:absolute after:top-0 after:right-0 after:w-1 after:h-full after:delay-500 after:duration-700 after:bg-red
-                        hover:after:w-6/12 hover:before:w-6/12 hover:after:delay-500 hover:before:delay-500"
-                    href="#contact">
-                    <span
-                        class="absolute text-white text-lg transition-all duration-500 delay-700 group-hover:scale-0 group-hover:delay-0">Contact
-                        Me</span>
-                    <span
-                        class="absolute text-white text-lg transition-all duration-500 delay-0 scale-300 opacity-0
-                    group-hover:scale-1 group-hover:z-10 group-hover:opacity-1 group-hover:delay-500">Contact
-                        Me</span>
-                </a>
+                    build a website that stands out by reflexing how you want the world to see you...</p>
+               
             
             </div>
         </div>
@@ -243,14 +272,24 @@
                 letters[i].classList.toggle('active')
             })
         }
+        // parallax animation
+        document.addEventListener("mousemove", parallax);
 
+        function parallax(e) {
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+                const x = (window.innerWidth - e.pageX * speed) / 100
+                const y = (window.innerHeight - e.pageY * speed) / 100
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
         function menuOpener() {
             document.querySelector(".open").classList.toggle('right-28');
             document.querySelector(".open").classList.toggle('right-0');
             document.querySelector(".close").classList.toggle('left-0');
             document.querySelector(".close").classList.toggle('-left-28');
             document.querySelector("nav").classList.toggle('left-0');
-            document.querySelector("nav").classList.toggle('-left-[-10000px]');
+            document.querySelector("nav").classList.toggle('left-[-10000px]');
         }
         
         function menuCloser() {
@@ -259,7 +298,7 @@
             document.querySelector(".close").classList.toggle('left-0');
             document.querySelector(".close").classList.toggle('-left-28');
             document.querySelector("nav").classList.toggle('left-0');
-            document.querySelector("nav").classList.toggle('-left-[-10000px]');
+            document.querySelector("nav").classList.toggle('left-[-10000px]');
         }
 
         gsap
@@ -297,16 +336,6 @@
                 opacity: 0,
                 right: -100
             })
-        // parallax animation
-        document.addEventListener("mousemove", parallax);
-
-        function parallax(e) {
-            this.querySelectorAll('.layer').forEach(layer => {
-                const speed = layer.getAttribute('data-speed')
-                const x = (window.innerWidth - e.pageX * speed) / 100
-                const y = (window.innerHeight - e.pageY * speed) / 100
-                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-            })
-        }
+        
     </script>
 @endpushOnce
