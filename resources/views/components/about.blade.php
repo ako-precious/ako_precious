@@ -22,6 +22,7 @@
     .circle:nth-child(4) {
         animation: animate 5s linear infinite, particle 10s ease-in infinite;
     }
+
     section .whyme span {
         position: relative;
         display: inline-block;
@@ -46,50 +47,73 @@
     }
 </style>
 <section class="relative overflow-hidden py-12 lg:py-20 min-h-screen">
-    <div class="container m-auto lg:py-3 bg-transparent flex flex-col lg:flex-row justify-center items-center">
-        <div class=" w-full lg:w-6/12 relative">
-            {{-- <div class="flex pl-5  m-auto  flex-col justify-center items-center md:items-start"> --}}
 
-            <div class="flex w-64 md:w-96 m-auto flex-col justify-center">
+    <div class="container m-auto lg:py-6 bg-transparent flex flex-col lg:flex-row justify-center items-center">
+        <div class=" w-full lg:w-6/12 relative">
+            <div class="flex w-64 md:w-96 m-auto flex-col justify-center items-center md:items-start">
                 <h1 data-replace="Why Me." role="heading"
-                    class="worksheader swap leading-10 pb-4 lg:text-7xl md:text-5xl text-darkblue text-3xl font-bold capitalize transition-all delay-75 ">
-                    <span> Why Me.
+                    class="worksheader swap leading-10 lg:text-7xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75 ">
+                    <span>Why Me.
                     </span>
                 </h1>
-                <div class="relative w-full h-[100px] ">
-                    <p class="text-white py-4 absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4">
-                        With my experience in front-end and back-end development, I can ensure that the website is not only
-                        visually appealing but also functional, user-friendly, and optimized for search engines.
-                        Additionally, I can work closely with the client to understand your specific needs and goals for
-                        the website, and tailor the development process accordingly.
-                        <br>
-                        My portfolio showcases my ability to create responsive designs that are accessible on a variety of
-                        devices, as well as my proficiency in using a range of programming languages, frameworks, and tools.
-                        From developing custom WordPress themes to building complex web applications from scratch, I have
-                        the expertise to handle any project.
-                        <br>
-                        By choosing me as your full stack developer, the client can be confident that they will receive a
-                        website that not only meets your expectations but exceeds them in terms of both form and function.
-                    </p>
-                    <p class="text-white py-4 absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4">
-                        With my experience in front-end and back-end development, I can ensure that the website is not only
-                        visually appealing but also functional, user-friendly, and optimized for search engines.
-                        Additionally, I can work closely with the client to understand your specific needs and goals for
-                        the website, and tailor the development process accordingly.
-                        <br>
-                        My portfolio showcases my ability to create responsive designs that are accessible on a variety of
-                        devices, as well as my proficiency in using a range of programming languages, frameworks, and tools.
-                        From developing custom WordPress themes to building complex web applications from scratch, I have
-                        the expertise to handle any project.
-                        <br>
-                        By choosing me as your full stack developer, the client can be confident that they will receive a
-                        website that not only meets your expectations but exceeds them in terms of both form and function.
-                    </p>
-                    <div class="circle"></div>
-                </div>
             </div>
         </div>
-        <div class=" w-full lg:w-6/12 relative ">
+        <div class=" w-full lg:w-6/12 relative written-text">
+        </div>
+    </div>
+    <div class="container m-auto  bg-transparent flex flex-col lg:flex-row justify-center items-center">
+        <div class=" w-full lg:w-6/12 relative lg:h-[500px] overflow-hidden "id="parent">
+            {{-- <div class="flex pl-5  m-auto  flex-col justify-center items-center md:items-start"> --}}
+
+            <div class="flex w-64 md:w-96 h-full relative m-auto flex-col justify-center cursor-grabbing ">
+
+                <p class="w-full text-white font-bold py-4 absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4">
+                    With my experience in front-end and back-end development, I can ensure that the website is not
+                    only
+                    visually appealing but also functional, user-friendly, and optimized for search engines.
+                    Additionally, I can work closely with the client to understand your specific needs and goals for
+                    the website, and tailor the development process accordingly.
+                    <br>
+                    My portfolio showcases my ability to create responsive designs that are accessible on a variety
+                    of
+                    devices, as well as my proficiency in using a range of programming languages, frameworks, and
+                    tools.
+                    From developing custom WordPress themes to building complex web applications from scratch, I
+                    have
+                    the expertise to handle any project.
+                    <br>
+                    By choosing me as your full stack developer, the client can be confident that they will receive
+                    a
+                    website that not only meets your expectations but exceeds them in terms of both form and
+                    function.
+                </p>
+                <p style=" -webkit-text-stroke: 0.1px white;"
+                    class="w-full z-10 text-transparent font-bold py-4 absolute top-2/4 left-2/4  -translate-y-2/4 -translate-x-2/4">
+                    With my experience in front-end and back-end development, I can ensure that the website is not
+                    only
+                    visually appealing but also functional, user-friendly, and optimized for search engines.
+                    Additionally, I can work closely with the client to understand your specific needs and goals for
+                    the website, and tailor the development process accordingly.
+                    <br>
+                    My portfolio showcases my ability to create responsive designs that are accessible on a variety
+                    of
+                    devices, as well as my proficiency in using a range of programming languages, frameworks, and
+                    tools.
+                    From developing custom WordPress themes to building complex web applications from scratch, I
+                    have
+                    the expertise to handle any project.
+                    <br>
+                    By choosing me as your full stack developer, the client can be confident that they will receive
+                    a
+                    website that not only meets your expectations but exceeds them in terms of both form and
+                    function.
+                </p>
+
+            </div>
+            <div id="circle" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);"
+                class="bg-black rounded-full absolute top-0 -left-2/4 w-28 h-28 border-4 border-white"></div>
+        </div>
+        <div class=" w-full lg:w-6/12 relative hidden lg:block ">
             <div style=" box-shadow: inset 0 25px 70px rgba(255,255,255,0.15);"
                 class="glow relative w-[500px] h-[500px] flex justify-center items-center rounded-full">
                 <div style=" --clr: #FF521B;"
@@ -110,23 +134,22 @@
 
 </section>
 
-@push('script')
+@pushOnce('scripts')
     <script>
-        
-        this function keeps the circle tracked to mouse movement by moving it every time the cursor moves
-document.addEventListener("mousemove", (e) => {
-  // create variables for circle and 50% of circle diameter:
-  const circle = document.getElementById("circle");
-  const halfCircleSize = circle.offsetHeight / 2;
+        //this function keeps the circle tracked to mouse movement by moving it every time the cursor moves
+        document.addEventListener("mousemove", (e) => {
+            // create variables for circle and 50% of circle diameter:
+            const parentDiv  = document.getElementById("parent");
+            const circle = parentDiv.querySelector("#circle");
+            const halfCircleSize = circle.offsetHeight / 2;
 
-  //get cursor location:
-  const mouse_x = e.clientX;
-  const mouse_y = e.clientY;
+            //get cursor location:
+            const mouse_x = e.clientX;
+            const mouse_y = e.clientY;
 
-  // move the circle to the cursor's location and offset the circle by 50% of its diameter so that it is centered with the cursor:
-  circle.style.left = `${mouse_x - halfCircleSize}px`;
-  circle.style.top = `${mouse_y - halfCircleSize}px`;
-});
-
+            // move the circle to the cursor's location and offset the circle by 50% of its diameter so that it is centered with the cursor:
+            circle.style.top = `${mouse_y - halfCircleSize}px`;
+            circle.style.left = `${mouse_x - halfCircleSize}px`;
+        });
     </script>
-@endpush
+@endpushOnce

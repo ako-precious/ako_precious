@@ -7,8 +7,8 @@
         --color-text: navy;
         --color-bg: papayawhip;
         --color-bg-accent: #1B1B3A;
-        --size: clamp(10rem, 1rem + 40vmin, 30rem);
-        --gap: calc(var(--size) / 14);
+        --size: clamp(7rem, 1rem + 40vmin, 30rem);
+        --gap: calc(var(--size) / 10);
         --duration: 60s;
         --scroll-start: 0;
         --scroll-end: calc(-100% - var(--gap));
@@ -58,27 +58,10 @@
         }
     }
 
-    @keyframes scroll-y {
-        from {
-            transform: translateY(var(--scroll-start));
-        }
-
-        to {
-            transform: translateY(var(--scroll-end));
-        }
-    }
+  
 
     /* Element styles */
-    .marquee svg {
-        display: grid;
-        place-items: center;
-        width: var(--size);
-        fill: var(--color-text);
-        background: var(--color-bg-accent);
-        aspect-ratio: 16/9;
-        padding: calc(var(--size) / 10);
-        border-radius: 0.5rem;
-    }
+   
 
     /* Parent wrapper */
     .wrapper {
@@ -131,11 +114,12 @@
     .marquee img {
         display: grid;
         place-items: center;
-        width: var(--size);
+        width: 250px;
+        height: 150px;
         fill: var(--color-text);
         background: var(--color-bg-accent);
         aspect-ratio: 16/9;
-        padding: calc(var(--size) / 10);
+        padding: calc(var(--size) / 10) calc(var(--size) / 5);
         border-radius: 0.5rem;
     }
 

@@ -43,11 +43,12 @@
         }
         </style>
     @endpushOnce('styles')
-    <section class="relative workssection  overflow-hidden py-12 lg:py-20 min-h-screen" id="works">
-        <h6 class="absolute text-white select-none pointer-events-none circular text-xs"> -Selected-Works</h6>
-        <div class="container m-auto lg:py-6 bg-transparent flex flex-col lg:flex-row justify-center items-center">
+    <section class="relative workssection  overflow-hidden py-12 min-h-screen" id="works">
+        {{-- <h6 class="absolute text-white select-none pointer-events-none circular text-xs"> -Selected-Works</h6> --}}
+       
+        <div class="container m-auto  bg-transparent flex flex-col lg:flex-row justify-center items-center">
             <div class=" w-full lg:w-6/12 relative">
-                <div class="flex pl-5 m-auto flex-col justify-center items-center md:items-start">
+                <div class="flex w-64 md:w-96 m-auto flex-col justify-center items-center md:items-start">
                     <h1 data-replace="Selected Works." role="heading"
                         class="worksheader swap leading-10 pb-4 lg:text-7xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75 ">
                         <span>Selected Works.
@@ -150,7 +151,7 @@
 
         </div>
         <div class="container relative hidden lg:flex flex-col  justify-center items-center">
-            <div class="my-[40px]">
+            <div class="my-[60px]">
                 <h1 data-jarallax-element="0 -200"
                     class="hover-3 leading-10 text-right mb-6 md:text-4xl text-white text-2xl font-bold capitalize transition-all delay-75 ">
                     <span>A Room Reservation System.
@@ -179,7 +180,7 @@
                     </div>
                 </div>
             </div>
-            <div class="my-[40px]">
+            <div class="my-[60px]">
                 <h1 data-jarallax-element="0 -200"
                     class="hover-3 my-4 leading-10 text-left mb-6 md:text-4xl text-white text-2xl font-bold capitalize transition-all delay-75 ">
                     <span>A Medical Registration System.
@@ -207,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            <div class="my-[40px]">
+            <div class="my-[60px]">
                 <h1 data-jarallax-element="0 -200"
                     class="hover-3 leading-10 text-right mb-6 md:text-4xl text-white text-2xl font-bold capitalize transition-all delay-75 ">
                     <span> A Loan Processing System
@@ -235,7 +236,7 @@
                     </div>
                 </div>
             </div>
-            <div class="my-[40px]">
+            <div class="my-[60px]">
                 <h1 data-jarallax-element="0 -200"
                     class="hover-3 my-4 leading-10 text-left mb-6 md:text-4xl text-white text-2xl font-bold capitalize transition-all delay-75 ">
                     <span>A QR Code Attendance System.

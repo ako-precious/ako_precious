@@ -11,6 +11,7 @@ export default defineConfig({
         laravel([
             'resources/css/app.css', 
             'resources/js/app.js',
+            'resources/js/firebase.js',
             'resources/js/scrollbar.js',
             'resources/js/jarallex-element.js',
         ]),
