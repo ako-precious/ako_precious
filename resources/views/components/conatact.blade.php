@@ -39,10 +39,10 @@
                     </a>
                 </div>
 
-                <div
+                {{-- <div
                     class="fixed w-0 h-0 border-4 rounded-full border-red -translate-y-2/4 -translate-x-2/4 pointer-events-none transition-all delay-75 duration-500 cursor
                     peer-hover:w-[50px] peer-hover:h-[50px] peer-hover:border-2 peer-hover:border-darkblue">
-                </div>
+                </div> --}}
             </div>
 
             <div class="flex flex-col items-center justify-center  w-full lg:w-10/12 p-12 ">
@@ -116,11 +116,11 @@
 
 @pushOnce('scripts')
     <script>
-    //     const cursor = document.querySelector('.cursor');
-    //     document.addEventListener("mousemove", function(e) {
-    //         cursor.style.left = e.pageX + 'px';
-    //         cursor.style.top = e.pageY + 'px';
+        // const cursor = document.querySelector('.cursor');
+        // document.addEventListener("mousemove", function(e) {
+        //     cursor.style.left = e.pageX + 'px';
+        //     cursor.style.top = e.pageY + 'px';
 
-    //     })
+        // })
     // </script>
 @endpushOnce
