@@ -1,5 +1,5 @@
 {{-- @Push('styles') --}}
-<link rel="stylesheet" href="{{ asset('css/header.css') }}">
+{{-- <link rel="stylesheet" href="{{ asset('css/header.css') }}"> --}}
 <style>
     .waterlike {
         border-radius: 52% 48% 77% 23% / 45% 59% 41% 55%;
@@ -224,11 +224,6 @@
                             <i class="fa-brands m-auto fa-twitter "></i>
                         </a>
                     </div>
-
-                    {{-- <div
-                        class="fixed w-0 h-0 border-4 rounded-full border-red -translate-y-2/4 -translate-x-2/4 pointer-events-none transition-all delay-75 duration-500 cursor
-                        peer-hover:w-[50px] peer-hover:h-[50px] peer-hover:border-2 peer-hover:border-darkblue">
-                    </div> --}}
                 </div>
             </li>
         </ul>
