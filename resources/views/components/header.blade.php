@@ -174,15 +174,23 @@
         style="font-size:4vw;">AKO's PORTFOLIO </h1>
 </header>
 <div class="relative overflow-hidden">
-    <nav class="fixed left-[-10000px] inset-0 w-screen bg-darkblue flex justify-center items-center h-screen z-40 transition-all delay-150 duration-700">
-            <ul class="relative w-full  flex justify-center items-center flex-col transition-all">
-                <li class="list-none  text-"onclick="menuCloser()"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#works">Works</a>
-                </li>
-                <li class="list-none  text-"onclick="menuCloser()"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#resume">Resume</a>
-                </li>
-                <li class="list-none  text-"onclick="menuCloser()"><a class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500" href="#contact">Contact</a>
-                </li>
-                <li class="list-none  text-"onclick="menuCloser()"> <div
+    <nav
+        class="fixed left-[-10000px] inset-0 w-screen bg-darkblue flex justify-center items-center h-screen z-40 transition-all delay-150 duration-700">
+        <ul class="relative w-full  flex justify-center items-center flex-col transition-all">
+            <li class="list-none  text-"onclick="menuCloser()"><a
+                    class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500"
+                    href="#works">Works</a>
+            </li>
+            <li class="list-none  text-"onclick="menuCloser()"><a
+                    class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500"
+                    href="#resume">Resume</a>
+            </li>
+            <li class="list-none  text-"onclick="menuCloser()"><a
+                    class="text-center text-2xl lg:text-3xl uppercase fontbold text-white inline-block p-4 hover:text-pink-700 transition-all delay-75 duration-500"
+                    href="#contact">Contact</a>
+            </li>
+            <li class="list-none  text-"onclick="menuCloser()">
+                <div
                     class=" flex iconic flex-row  items-center justify-center w-full lg:w-[320px]  lg:py-12  ml-0 rounded-full  ">
                     <div
                         class=" my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px]  outline-black -outline-offset-[16px]
@@ -216,14 +224,15 @@
                             <i class="fa-brands m-auto fa-twitter "></i>
                         </a>
                     </div>
-    
-                    <div
+
+                    {{-- <div
                         class="fixed w-0 h-0 border-4 rounded-full border-red -translate-y-2/4 -translate-x-2/4 pointer-events-none transition-all delay-75 duration-500 cursor
                         peer-hover:w-[50px] peer-hover:h-[50px] peer-hover:border-2 peer-hover:border-darkblue">
-                    </div>
-                </div></li>
-            </ul>
-        </nav>
+                    </div> --}}
+                </div>
+            </li>
+        </ul>
+    </nav>
 
 </div>
 <section class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto">
@@ -240,8 +249,8 @@
                     technical
                     expertise and creative solutions necessary to
                     build a website that stands out by reflexing how you want the world to see you...</p>
-               
-            
+
+
             </div>
         </div>
         <div class="w-full lg:w-6/12 pt-3 m-auto relative my-image">
@@ -283,6 +292,7 @@
                 layer.style.transform = `translateX(${x}px) translateY(${y}px)`
             })
         }
+
         function menuOpener() {
             document.querySelector(".open").classList.toggle('right-28');
             document.querySelector(".open").classList.toggle('right-0');
@@ -291,7 +301,7 @@
             document.querySelector("nav").classList.toggle('left-0');
             document.querySelector("nav").classList.toggle('left-[-10000px]');
         }
-        
+
         function menuCloser() {
             document.querySelector(".open").classList.toggle('right-28');
             document.querySelector(".open").classList.toggle('right-0');
@@ -336,6 +346,5 @@
                 opacity: 0,
                 right: -100
             })
-        
     </script>
 @endpushOnce
