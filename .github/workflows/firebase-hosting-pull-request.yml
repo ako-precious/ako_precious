@@ -40,4 +40,4 @@ jobs:
       - name: Deploy to Firebase Hosting
         env:
           FIREBASE_PROJECT_ID: akos-portfolio
-      run: firebase deploy --project akos-portfolio --only hosting:PR-$GITHUB_HEAD_REF
+        run: firebase deploy --project akos-portfolio --only hosting:PR-$GITHUB_HEAD_REF
