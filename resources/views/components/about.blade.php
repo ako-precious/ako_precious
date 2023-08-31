@@ -61,13 +61,13 @@
         <div class=" w-full lg:w-6/12 relative written-text">
         </div>
     </div>
-    <div class="container m-auto  bg-transparent flex flex-col lg:flex-row justify-center items-center">
+    <div class="container m-auto px-8 bg-transparent flex flex-col lg:flex-row justify-center items-center">
         <div class=" w-full lg:w-6/12 relative lg:h-[500px] overflow-hidden "id="parent">
             {{-- <div class="flex pl-5  m-auto  flex-col justify-center items-center md:items-start"> --}}
 
-            <div class="flex w-64 md:w-96 h-full relative m-auto flex-col justify-center cursor-grabbing ">
+            <div class="flex w-full  md:w-96 h-full relative m-auto flex-col justify-center cursor-grabbing ">
 
-                <p class="w-full text-white font-bold py-4 absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4">
+                <p class="w-full text-white font-bold py-4 ">
                     With my experience in front-end and back-end development, I can ensure that the website is not
                     only
                     visually appealing but also functional, user-friendly, and optimized for search engines.

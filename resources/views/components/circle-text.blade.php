@@ -150,7 +150,7 @@
             </div>
 
         </div>
-        <div class="container relative hidden lg:flex flex-col  justify-center items-center">
+        <div class="container relative hidden lg:flex flex-col  justify-center items-center m-auto">
             <div class="my-[60px]">
                 <h1 data-jarallax-element="0 -200"
                     class="hover-3 leading-10 text-right mb-6 md:text-4xl text-white text-2xl font-bold capitalize transition-all delay-75 ">
